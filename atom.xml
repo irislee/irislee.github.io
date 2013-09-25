@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://irislee.github.io/atom.xml" rel="self"/>
   <link href="http://irislee.github.io/"/>
-  <updated>2013-09-24T21:52:38-04:00</updated>
+  <updated>2013-09-24T22:04:31-04:00</updated>
   <id>http://irislee.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,18 +14,13 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
+    <title type="html"><![CDATA[hello world]]></title>
     <link href="http://irislee.github.io/blog/2013/09/24/hello-world/"/>
-    <updated>2013-09-24T00:00:00-04:00</updated>
+    <updated>2013-09-24T21:51:00-04:00</updated>
     <id>http://irislee.github.io/blog/2013/09/24/hello-world</id>
-    <content type="html"><![CDATA[<h2>Hello World!</h2>
+    <content type="html"><![CDATA[<p>test post.</p>
 
-<p>layout: post
-title: &ldquo;hello world&rdquo;
-date: 2013-09-24 21:51
-comments: true</p>
-
-<h2>categories: </h2>
+<p>is it working yet?</p>
 ]]></content>
   </entry>
   
