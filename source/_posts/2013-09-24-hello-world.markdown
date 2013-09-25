@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "hello world"
-date: 2013-09-24 21:51
+date: 2013-09-24 22:05
 comments: true
 categories: 
 ---
-test post.
-
-is it working yet?
+will it work this time?
