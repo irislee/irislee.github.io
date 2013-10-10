@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Iris Lee]]></title>
+  <link href="http://irislee.github.io/atom.xml" rel="self"/>
+  <link href="http://irislee.github.io/"/>
+  <updated>2013-10-10T14:27:47-04:00</updated>
+  <id>http://irislee.github.io/</id>
+  <author>
+    <name><![CDATA[Iris Lee]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby Tricks and Oddities]]></title>
+    <link href="http://irislee.github.io/blog/2013/10/08/ruby-tricks-and-oddities/"/>
+    <updated>2013-10-08T06:34:00-04:00</updated>
+    <id>http://irislee.github.io/blog/2013/10/08/ruby-tricks-and-oddities</id>
+    <content type="html"><![CDATA[<p>Just looked through Julio Santos&#8217; <a href="https://speakerdeck.com/jsantos/ruby-things">&ldquo;Ruby Things&rdquo;</a> on Speaker Deck and learned some quirkly little things about Ruby.</p>
+
+<p>Creating hashes from arrays. 2 different outcomes:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Hash</span><span class="o">[[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">]]</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="o">[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="o">]=&gt;[</span><span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">a</span><span class="o">=[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;two&quot;</span><span class="p">,</span><span class="mi">2</span><span class="o">]</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="o">[[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">]]</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">Hash</span><span class="o">[</span><span class="n">a</span><span class="o">]</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="s2">&quot;one&quot;</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;two&quot;</span><span class="o">=&gt;</span><span class="mi">2</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The <a href="http://ruby-doc.org/core-2.0.0/Array.html#method-i-zip">zip method</a> &ldquo;converts any arguments to arrays, then merges elements of self with corresponding elements from each argument.&rdquo;
+For example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span>
+</span><span class='line'><span class="n">b</span> <span class="o">=</span> <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span>
+</span><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="o">].</span><span class="n">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="o">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="o">]]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Santos demonstrates that you can use zip to create hashes:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">keys</span> <span class="o">=</span> <span class="o">[</span><span class="ss">:one</span><span class="p">,</span> <span class="ss">:two</span><span class="p">,</span> <span class="ss">:three</span><span class="o">]</span>
+</span><span class='line'><span class="n">values</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span>
+</span><span class='line'><span class="n">zip</span> <span class="o">=</span> <span class="n">keys</span><span class="o">.</span><span class="n">zip</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="o">[[</span><span class="ss">:one</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="ss">:two</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="ss">:three</span><span class="p">,</span> <span class="mi">3</span><span class="o">]]</span>
+</span><span class='line'><span class="no">Hash</span><span class="o">[</span><span class="n">zip</span><span class="o">]</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:one</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span> <span class="ss">:two</span><span class="o">=&gt;</span><span class="mi">2</span><span class="p">,</span> <span class="ss">:three</span><span class="o">=&gt;</span><span class="mi">3</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And yesterday while wishing a <code>collect_with_index</code> method existed, my group discovered that you can combine <code>each_with_index</code> with <code>collect</code>!</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Array</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">make_list</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">each_with_index</span><span class="o">.</span><span class="n">collect</span> <span class="k">do</span> <span class="o">|</span><span class="n">german</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+</span><span class='line'>      <span class="s2">&quot;</span><span class="si">#{</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">#{</span><span class="n">german</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;eins&quot;</span><span class="p">,</span> <span class="s2">&quot;zwei&quot;</span><span class="p">,</span> <span class="s2">&quot;drei&quot;</span><span class="o">]</span>
+</span><span class='line'><span class="n">array</span><span class="o">.</span><span class="n">make_list</span>
+</span><span class='line'> <span class="o">=&gt;</span> <span class="o">[</span><span class="s2">&quot;1. eins&quot;</span><span class="p">,</span> <span class="s2">&quot;2. zwei&quot;</span><span class="p">,</span> <span class="s2">&quot;3. drei&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
