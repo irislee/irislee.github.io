@@ -4,7 +4,7 @@
   <title><![CDATA[Iris Lee]]></title>
   <link href="http://irislee.github.io/atom.xml" rel="self"/>
   <link href="http://irislee.github.io/"/>
-  <updated>2013-10-18T10:52:03-04:00</updated>
+  <updated>2013-10-18T10:53:59-04:00</updated>
   <id>http://irislee.github.io/</id>
   <author>
     <name><![CDATA[Iris Lee]]></name>
@@ -33,7 +33,7 @@
 
 <p>But what is the origin of using &ldquo;foo,&rdquo; &ldquo;bar,&rdquo; and &ldquo;baz&rdquo; as placeholder names in pseudocode (aka  metasyntactic variables)? According to the interwebs, &ldquo;foo&rdquo; first emerged as a nonsense word in the 1930s in the comic <i>Smokey Stover</i> by Bill Holman and became popular in other cartoons at the time. From there, &ldquo;foo&rdquo; merged with the military acronym <a href="http://en.wikipedia.org/wiki/FUBAR#FUBAR">FUBAR</a>, which arose in the armed forces during WWII. The use of &ldquo;foo&rdquo; in programming, however, is credited to MIT&rsquo;s Tech Model Railroad Club (TMRC) in the 1960s.</p>
 
-<p><img class="[class names]" src="http://images4.fanpop.com/image/photos/21700000/thomas-friends-thomas-and-friends-21747158-2001-1396.jpg" title="[Thomas and Friends [TMRC]]" ></p>
+<p><img src="http://images4.fanpop.com/image/photos/21700000/thomas-friends-thomas-and-friends-21747158-2001-1396.jpg" title="Thomas and Friends" ></p>
 
 <p>The TMRC is celebrated due to its developmental role in hacker culture.
 Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldquo;Tech Engineering News.&rdquo; In TMRC&rsquo;s train model system, there were scram switches located at numerous places around the room that could be thrown if a train was going to crash into something. Another feature of the system was a digital clock on the dispatch board. When someone hit a scram switch, the clock stopped and would instead display the word &ldquo;foo,&rdquo; thus why they were called &ldquo;foo&rdquo; switches.</p>
