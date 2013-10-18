@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ruby | Iris Lee]]></title>
+  <link href="http://irislee.github.io/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://irislee.github.io/"/>
+  <updated>2013-10-18T11:41:39-04:00</updated>
+  <id>http://irislee.github.io/</id>
+  <author>
+    <name><![CDATA[Iris Lee]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby Tricks and Oddities]]></title>
+    <link href="http://irislee.github.io/blog/2013/10/08/ruby-tricks-and-oddities/"/>
+    <updated>2013-10-08T06:34:00-04:00</updated>
+    <id>http://irislee.github.io/blog/2013/10/08/ruby-tricks-and-oddities</id>
+    <content type="html"><![CDATA[<p>Just looked through Julio Santos' <a href="https://speakerdeck.com/jsantos/ruby-things">&ldquo;Ruby Things&rdquo;</a> on Speaker Deck and learned some quirkly little things about Ruby.</p>
+
+<p>Creating hashes from arrays. 2 different outcomes:
+```ruby
+Hash[[&ldquo;one&rdquo;, 1], [&ldquo;two&rdquo;, 2]]
+=> {[&ldquo;one&rdquo;, 1]=>[&ldquo;two&rdquo;, 2]}</p>
+
+<p>a=[&ldquo;one&rdquo;, 1], [&ldquo;two&rdquo;,2]
+=> [[&ldquo;one&rdquo;, 1], [&ldquo;two&rdquo;, 2]]</p>
+
+<p>Hash[a]
+=> {&ldquo;one&rdquo;=>1, &ldquo;two&rdquo;=>2}
+```</p>
+
+<p>The <a href="http://ruby-doc.org/core-2.0.0/Array.html#method-i-zip">zip method</a> &ldquo;converts any arguments to arrays, then merges elements of self with corresponding elements from each argument.&rdquo;
+For example:
+<code>ruby
+a = [2, 5, 8]
+b = [3, 6, 9]
+[1, 4, 7].zip(a, b)
+=&gt; [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+</code>
+Santos demonstrates that you can use zip to create hashes:
+<code>ruby
+keys = [:one, :two, :three]
+values = [1, 2, 3]
+zip = keys.zip(values)
+=&gt; [[:one, 1], [:two, 2], [:three, 3]]
+Hash[zip]
+=&gt; {:one=&gt;1, :two=&gt;2, :three=&gt;3}
+</code></p>
+
+<p>And yesterday while wishing a <code>collect_with_index</code> method existed, my group discovered that you can combine <code>each_with_index</code> with <code>collect</code>!
+```ruby
+class Array
+  def make_list</p>
+
+<pre><code>self.each_with_index.collect do |german, index|
+  "#{index+1}. #{german}"
+end
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>array = [&ldquo;eins&rdquo;, &ldquo;zwei&rdquo;, &ldquo;drei&rdquo;]
+array.make_list
+ => [&ldquo;1. eins&rdquo;, &ldquo;2. zwei&rdquo;, &ldquo;3. drei&rdquo;]
+```</p>
+]]></content>
+  </entry>
+  
+</feed>

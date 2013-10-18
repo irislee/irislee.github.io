@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: flatironschool | Iris Lee]]></title>
+  <link href="http://irislee.github.io/blog/categories/flatironschool/atom.xml" rel="self"/>
+  <link href="http://irislee.github.io/"/>
+  <updated>2013-10-18T11:41:39-04:00</updated>
+  <id>http://irislee.github.io/</id>
+  <author>
+    <name><![CDATA[Iris Lee]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Avi's Hierarchy]]></title>
+    <link href="http://irislee.github.io/blog/2013/10/18/avis-hierarchy/"/>
+    <updated>2013-10-18T11:28:00-04:00</updated>
+    <id>http://irislee.github.io/blog/2013/10/18/avis-hierarchy</id>
+    <content type="html"><![CDATA[<p><img src="../images/downloads/avi.png"></p>
+
+<p>Where you should be spending your time when working on a project:</p>
+
+<ul>
+  <li>Views: things like erb templates have the least priority</li>
+  <li>Controllers: site generators, parsers, etc are second to least important</li>
+  <li><strong>Models: very high priority!</strong> Be sure to have a bunch of tests for your models.</li>
+  <li>Databases: super important to have a good foundation for your project so you can use it.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
