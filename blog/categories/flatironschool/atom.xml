@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flatironschool | Iris Lee]]></title>
   <link href="http://irislee.github.io/blog/categories/flatironschool/atom.xml" rel="self"/>
   <link href="http://irislee.github.io/"/>
-  <updated>2013-10-18T11:41:39-04:00</updated>
+  <updated>2013-10-18T12:05:48-04:00</updated>
   <id>http://irislee.github.io/</id>
   <author>
     <name><![CDATA[Iris Lee]]></name>
@@ -18,13 +18,13 @@
     <link href="http://irislee.github.io/blog/2013/10/18/avis-hierarchy/"/>
     <updated>2013-10-18T11:28:00-04:00</updated>
     <id>http://irislee.github.io/blog/2013/10/18/avis-hierarchy</id>
-    <content type="html"><![CDATA[<p><img src="../images/downloads/avi.png"></p>
+    <content type="html"><![CDATA[<p><img src="/images/downloads/avi.png" title="Avi's Goofy Triangle" alt="Avi's Goofy Triangle" /></p>
 
 <p>Where you should be spending your time when working on a project:</p>
 
 <ul>
-  <li>Views: things like erb templates have the least priority</li>
-  <li>Controllers: site generators, parsers, etc are second to least important</li>
+  <li>Views: things like erb templates have the least priority.</li>
+  <li>Controllers: site generators, parsers, etc are second to least important.</li>
   <li><strong>Models: very high priority!</strong> Be sure to have a bunch of tests for your models.</li>
   <li>Databases: super important to have a good foundation for your project so you can use it.</li>
 </ul>
