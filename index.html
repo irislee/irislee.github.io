@@ -9,7 +9,14 @@
   <meta name="author" content="Iris Lee">
 
   
-  <meta name="description" content="Just looked through Julio Santos&#8217; &ldquo;Ruby Things&rdquo; on Speaker Deck and learned some quirkly little things about Ruby. Creating hashes &hellip;">
+  <meta name="description" content="You&rsquo;ve probably seen something like this before: 1
+2
+3
+4
+foo = &quot;Chunky&quot;
+bar = &quot;Bacon!&quot;
+puts foo + &quot; &quot; + bar
+=&gt &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +72,91 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/17/what-is-foobar/">What&#8217;s Foo Bar?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-17T12:12:00-04:00" pubdate data-updated="true">Oct 17<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>You&rsquo;ve probably seen something like this before:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">foo</span> <span class="o">=</span> <span class="s2">&quot;Chunky&quot;</span>
+</span><span class='line'><span class="n">bar</span> <span class="o">=</span> <span class="s2">&quot;Bacon!&quot;</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">foo</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">bar</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="no">Chunky</span> <span class="no">Bacon</span><span class="o">!</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But what is the origin of using &ldquo;foo,&rdquo; &ldquo;bar,&rdquo; and &ldquo;baz&rdquo; as placeholder names in pseudocode (aka  metasyntactic variables)? According to the interwebs, &ldquo;foo&rdquo; first emerged as a nonsense word in the 1930s in the comic <i>Smokey Stover</i> by Bill Holman and became popular in other cartoons at the time. From there, &ldquo;foo&rdquo; merged with the military acronym <a href="http://en.wikipedia.org/wiki/FUBAR#FUBAR">FUBAR</a>, which arose in the armed forces during WWII. The use of &ldquo;foo&rdquo; in programming, however, is credited to MIT&rsquo;s Tech Model Railroad Club (TMRC) in the 1960s.</p>
+
+<p><img src="../images/downloads/taf.jpg" title="MIT's Tech Model Railroad Club" alt="Thomas and Friends" /></p>
+
+<p>The TMRC is celebrated due to its developmental role in hacker culture.
+Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldquo;Tech Engineering News.&rdquo; In TMRC&rsquo;s train model system, there were scram switches located at numerous places around the room that could be thrown if a train was going to crash into something. Another feature of the system was a digital clock on the dispatch board. When someone hit a scram switch, the clock stopped and would instead display the word &ldquo;&#8221;foo&rdquo;,&ldquo; thus why they were called &rdquo;&ldquo;foo&rdquo; switches&#8221;.</p>
+
+<p>The train room also had two buttons by the door labeled &ldquo;foo&rdquo; and &ldquo;bar&rdquo;. They were often re-purposed for whatever fun idea the TMRC had at the time, hence the adoption of &ldquo;foo&rdquo; and &ldquo;bar&rdquo; as general purpose variable names. &ldquo;Baz&rdquo; exists simply because Stanford preferred &ldquo;baz&rdquo; over &ldquo;bar&rdquo;.</p>
+
+<p>The terms were made popular through computer science circles in the 1960s and early 1970s by system manuals from the Digital Equipment Corporation and <a href="http://en.wikipedia.org/wiki/FORTRAN">Fortran&rsquo;s</a> code for <i><a href="http://en.wikipedia.org/wiki/Colossal_Cave_Adventure">Colossal Cave Adventure</a></i>.</p>
+
+<p>Pseudocode in other countries:</p>
+
+<ul>
+  <li>UK: wibble, wobble, fred, flob</li>
+  <li>France: toto, tata, tutu, bidule, azerty (French keyboard&#8217;s asdf)</li>
+  <li>Japan: hoge, piyo, fuga, hogera</li>
+  <li>Isarael: chupchick, stam</li>
+  <li>Italy: pippo, pluto, paperino</li>
+  <li>Spain: fulano, mengano, zutano</li>
+</ul>
+
+
+
+
+<h2>TL;DR</h2>
+
+
+<ul>
+  <li>&#8220;foo&#8221; is a nonsense word from 1930s comics.</li>
+  <li>FUBAR comes from US military slang during WWII.</li>
+  <li>MIT&#8217;s Tech Model Train Club popularized the terms for tinkering/hacking.</li>
+  <li>Use &#8220;foo&#8221;, bar, and baz to test out concepts so you don&#8217;t cause a SNAFU and make your code FUBAR.</li>
+  <li>What about &#8220;Hello, World&#8221;? It comes from <em><a href = "http://en.wikipedia.org/wiki/The_C_Programming_Language_(book)">The C Programming Language</a></em>.</li>
+  <li>What about &#8220;Chunky Bacon&#8221;? It comes from <em><a href = "http://en.wikipedia.org/wiki/Why's_(poignant)_Guide_to_Ruby">why&#8217;s (poignant) Guide to Ruby</a></em>.</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -192,6 +284,10 @@ For example:</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/17/what-is-foobar/">What&#8217;s Foo Bar?</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/10/08/ruby-tricks-and-oddities/">Ruby Tricks and Oddities</a>
