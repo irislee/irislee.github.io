@@ -8,16 +8,10 @@
   <title>Iris Lee</title>
   <meta name="author" content="Iris Lee">
 
+   
+  <meta name="description" content="This is where I write stuff. It's trying to be good, it has potential, but it's not. That's ok.">
   
-  <meta name="description" content="You&rsquo;ve probably seen something like this before: 1
-2
-3
-4
-foo = &quot;Chunky&quot;
-bar = &quot;Bacon!&quot;
-puts foo + &quot; &quot; + bar
-=&gt &hellip;">
-  
+  <meta name="keywords" content="">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -27,12 +21,16 @@ puts foo + &quot; &quot; + bar
   
   <link rel="canonical" href="http://irislee.github.io/blog">
   <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Iris Lee" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap-collapse.js"></script>
+  <script src="/js/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/js/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -42,45 +40,44 @@ puts foo + &quot; &quot; + bar
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Iris Lee</a></h1>
-  
-    <h2>This is where I write stuff. It's trying to be good, it has potential, but it's not. That's ok.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:irislee.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+  <div class="navbar navbar-inverse navbar-static-top">
+  	<div class="navbar-inner">
+  	  <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="fui-menu-24"></span>
+        </a>
+  	  	<div class="nav-collapse collapse navbar-responsive-collapse" style="height:0;">
+  	      <ul class="nav">
+    
 </ul>
 
-</nav>
-  <div id="main">
-    <div id="content">
-      
+<ul class="nav pull-right">
+    
+    <li><a href="http://github.com/irislee" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
+    
+    
+    
+    
+    
+    
+</ul>
+
+  	    </div>
+  	  </div>
+  	</div>
+  </div>
+  <div class="container" id="main">
+    <div class="span12">
+      <div class="row-fluid">
+        <div id="content">
+          
 
 
     <article class="post">
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/17/what-is-foobar/">What&#8217;s Foo Bar?</a></h1>
-    
-    
-      <p class="meta">
-        
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
 
 
 
@@ -92,14 +89,19 @@ puts foo + &quot; &quot; + bar
   
 
 
-<time datetime="2013-10-17T12:12:00-04:00" pubdate data-updated="true">Oct 17<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>You&rsquo;ve probably seen something like this before:</p>
+<i class="icon-calendar-empty"></i> <time datetime="2013-10-17T12:12:00-04:00" pubdate data-updated="true">Oct 17<span>th</span>, 2013</time></h5>
+          <div class="row-fluid">
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2013/10/17/what-is-foobar/">What&#8217;s foo bar?</a></h1>
+      <p>You&rsquo;ve probably seen something like this before:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -114,7 +116,10 @@ puts foo + &quot; &quot; + bar
 
 <p>But what is the origin of using &ldquo;foo,&rdquo; &ldquo;bar,&rdquo; and &ldquo;baz&rdquo; as placeholder names in pseudocode (aka  metasyntactic variables)? According to the interwebs, &ldquo;foo&rdquo; first emerged as a nonsense word in the 1930s in the comic <i>Smokey Stover</i> by Bill Holman and became popular in other cartoons at the time. From there, &ldquo;foo&rdquo; merged with the military acronym <a href="http://en.wikipedia.org/wiki/FUBAR#FUBAR">FUBAR</a>, which arose in the armed forces during WWII. The use of &ldquo;foo&rdquo; in programming, however, is credited to MIT&rsquo;s Tech Model Railroad Club (TMRC) in the 1960s.</p>
 
-<p><img src="../images/downloads/taf.jpg" title="MIT's Tech Model Railroad Club" alt="Thomas and Friends" /></p>
+<!-- ![Thomas and Friends](../images/downloads/taf.jpg "MIT's Tech Model Railroad Club") -->
+
+
+<p><img class="right" src="http://images4.fanpop.com/image/photos/21700000/thomas-friends-thomas-and-friends-21747158-2001-1396.jpg" title="Thomas and Friends" alt="MIT"></p>
 
 <p>The TMRC is celebrated due to its developmental role in hacker culture.
 Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldquo;Tech Engineering News.&rdquo; In TMRC&rsquo;s train model system, there were scram switches located at numerous places around the room that could be thrown if a train was going to crash into something. Another feature of the system was a digital clock on the dispatch board. When someone hit a scram switch, the clock stopped and would instead display the word &ldquo;&#8221;foo&rdquo;,&ldquo; thus why they were called &rdquo;&ldquo;foo&rdquo; switches&#8221;.</p>
@@ -149,21 +154,21 @@ Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldqu
   <li>What about &#8220;Chunky Bacon&#8221;? It comes from <em><a href = "http://en.wikipedia.org/wiki/Why's_(poignant)_Guide_to_Ruby">why&#8217;s (poignant) Guide to Ruby</a></em>.</li>
 </ul>
 
-</div>
-  
-  
+
+      
+      
+    </div>
+  </div>
+
 
 </article>
 
 
     <article class="post">
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/08/ruby-tricks-and-oddities/">Ruby Tricks and Oddities</a></h1>
-    
-    
-      <p class="meta">
-        
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
 
 
 
@@ -175,14 +180,19 @@ Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldqu
   
 
 
-<time datetime="2013-10-08T06:34:00-04:00" pubdate data-updated="true">Oct 8<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Just looked through Julio Santos&#8217; <a href="https://speakerdeck.com/jsantos/ruby-things">&ldquo;Ruby Things&rdquo;</a> on Speaker Deck and learned some quirkly little things about Ruby.</p>
+<i class="icon-calendar-empty"></i> <time datetime="2013-10-08T06:34:00-04:00" pubdate data-updated="true">Oct 8<span>th</span>, 2013</time></h5>
+          <div class="row-fluid">
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2013/10/08/ruby-tricks-and-oddities/">Ruby Tricks and Oddities</a></h1>
+      <p>Just looked through Julio Santos&#8217; <a href="https://speakerdeck.com/jsantos/ruby-things">&ldquo;Ruby Things&rdquo;</a> on Speaker Deck and learned some quirkly little things about Ruby.</p>
 
 <p>Creating hashes from arrays. 2 different outcomes:</p>
 
@@ -262,9 +272,12 @@ For example:</p>
 </span><span class='line'> <span class="o">=&gt;</span> <span class="o">[</span><span class="s2">&quot;1. eins&quot;</span><span class="p">,</span> <span class="s2">&quot;2. zwei&quot;</span><span class="p">,</span> <span class="s2">&quot;3. drei&quot;</span><span class="o">]</span>
 </span></code></pre></td></tr></table></div></figure>
 
-</div>
-  
-  
+
+      
+      
+    </div>
+  </div>
+
 
 </article>
 
@@ -273,14 +286,20 @@ For example:</p>
     
     <div class="center"><a href="/blog/archives">Blog Archives</a></div>
 </nav>
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <footer class="footer-page" role="contentinfo">
+          <p>
   Copyright &copy; 2013 - Iris Lee -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span> - Theme by <a href="http://alexgaribay.com">Alex Garibay</a>
 </p>
 
-</footer>
+
+        </footer>
+      </div>
+    </div>
+  </div>
   
 
 
@@ -294,7 +313,7 @@ For example:</p>
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>
