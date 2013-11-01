@@ -4,7 +4,7 @@
   <title><![CDATA[Iris Lee]]></title>
   <link href="http://irislee.github.io/atom.xml" rel="self"/>
   <link href="http://irislee.github.io/"/>
-  <updated>2013-11-01T09:02:10-04:00</updated>
+  <updated>2013-11-01T10:31:15-04:00</updated>
   <id>http://irislee.github.io/</id>
   <author>
     <name><![CDATA[Iris Lee]]></name>
@@ -18,9 +18,11 @@
     <link href="http://irislee.github.io/blog/2013/11/01/8-steps-to-create-a-simple-capybara-test/"/>
     <updated>2013-11-01T08:18:00-04:00</updated>
     <id>http://irislee.github.io/blog/2013/11/01/8-steps-to-create-a-simple-capybara-test</id>
-    <content type="html"><![CDATA[<p>What&rsquo;s Capybara?
-<img src="http://irislee.github.io/images/downloads/capybara.jpg" title="Capybara" alt="Capybara" />
-Capybara is basically a library that helps you test web applications by simulating how a real user would interact with your app.</p>
+    <content type="html"><![CDATA[<p>What&rsquo;s Capybara?</p>
+
+<p><img src="http://irislee.github.io/images/downloads/capybara.jpg" title="Capybara" alt="Capybara" /></p>
+
+<p>Capybara is basically a library that helps you test web applications by simulating how a real user would interact with your app.</p>
 
 <p><a href="https://github.com/jnicklas/capybara">Capybara</a> requires Ruby 1.9.3 or later. To install, type in your terminal:</p>
 
