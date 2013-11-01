@@ -89,6 +89,315 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2013-11-01T08:18:00-04:00" pubdate data-updated="true">Nov 1<span>st</span>, 2013</time></h5>
+          <div class="row-fluid">
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2013/11/01/8-steps-to-create-a-simple-capybara-test/">8 Steps to Create a Simple Capybara Test</a></h1>
+      <p>What&rsquo;s Capybara?
+<img src="/images/downloads/capybara.png" title="Capybara" alt="Capybara" />
+Capybara is basically a library that helps you test web applications by simulating how a real user would interact with your app.</p>
+
+<p><a href="https://github.com/jnicklas/capybara">Capybara</a> requires Ruby 1.9.3 or later. To install, type in your terminal:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>gem install capybara
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Capybara tests are often called feature tests or end-to-end testing. It was built on top of Nokogiri in order to discover the elements on a page using HTML and CSS. It is a DSL (Domain Specific Language) that is built on top of <a href="https://github.com/rspec/rspec">RSpec</a> and <a href="http://cukes.info/">Cucumber</a>.</p>
+
+<p>Capybara tests are like RSpec tests with Capybara flavoring (yum giant rodent). Some keywords:</p>
+
+<table border="1">
+  <tr>
+    <th>Capybara DSL</th>
+    <th>RSpec DSL</th>
+  </tr>
+  <tr>
+    <td>feature</td>
+    <td>describe</td>
+  </tr>
+  <tr>
+    <td>background </td>
+    <td>before</td>
+  </tr>
+  <tr>
+    <td>scenario</td>
+    <td>it</td>
+  </tr>
+  <tr>
+    <td>given</td>
+    <td>let</td>
+  </tr>
+</table>
+
+
+<p>Capybara uses a web driver (in this example Selenium) to do some browser magic. It lets you control the browser through code and has the browser take actions on your behalf in order to make sure the website actually works as the user will experience. Normally a &ldquo;headless browser&rdquo; is used to save memory, but the example below will show it to you live&hellip;for funsies.</p>
+
+<p>Examples of Capybara syntax:</p>
+
+<table border="1">
+  <tr>
+    <th>Method</th>
+    <th>What it does</th>
+  </tr>
+  <tr>
+    <td>visit &#8216;url&#8217;</td>
+    <td>goes to the given url</td>
+  </tr>
+  <tr>
+    <td>fill_in(locator, :with => option)</td>
+    <td>finds text field by id and fills in with option</td>
+  </tr>
+  <tr>
+    <td>click_button(locator)</td>
+    <td>finds button by id and clicks it</td>
+  </tr>
+</table>
+
+
+
+
+<h2>Capybara with Google and Youtube Searches.</h2>
+
+
+<p></p>
+
+<p>You can download this code <a href="https://github.com/irislee/try-capybara">here</a>.</p>
+
+
+
+
+<h3>Step 1</h3>
+
+
+<p>In your project folder, add Capybara and Selenium-WebDriver to your Gemfile. It should look like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">source</span> <span class="s1">&#39;https://rubygems.org&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">gem</span> <span class="s2">&quot;sinatra&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">group</span> <span class="ss">:test</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s2">&quot;rspec&quot;</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s2">&quot;capybara&quot;</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;selenium-webdriver&#39;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h3>Step 2</h3>
+
+
+<p>Don&rsquo;t forget to bundle.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>bundle install
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h3>Step 3</h3>
+
+
+<p>Create a simple_app.rb file (it got mad at me if I didn&rsquo;t include this file).</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">require_relative</span> <span class="s1">&#39;./environment&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">get</span> <span class="s1">&#39;/&#39;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="s2">&quot;hello capybara&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h3>Step 4</h3>
+
+
+<p><em>Normally, there&rsquo;d be more folders in your application, but this is a very simple example so everything is in the top level.</em></p>
+
+<p>Your environment.rb should look like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;bundler/setup&#39;</span>
+</span><span class='line'><span class="no">Bundler</span><span class="o">.</span><span class="n">require</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;./simple_app&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h3>Step 5</h3>
+
+
+<p>And your config.ru&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;./environment&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">run</span> <span class="no">SimpleApp</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h3>Step 6</h3>
+
+
+<p>Require Capybara in your spec_helper.rb file:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;capybara&#39;</span>
+</span><span class='line'><span class="kp">include</span> <span class="ss">Capybara</span><span class="p">:</span><span class="ss">:DSL</span>
+</span><span class='line'><span class="no">Capybara</span><span class="o">.</span><span class="n">default_driver</span> <span class="o">=</span> <span class="ss">:selenium</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">app</span>
+</span><span class='line'>  <span class="ss">Sinatra</span><span class="p">:</span><span class="ss">:Application</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:environment</span><span class="p">,</span> <span class="ss">:test</span>
+</span><span class='line'><span class="no">RSpec</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">treat_symbols_as_metadata_keys_with_true_values</span> <span class="o">=</span> <span class="kp">true</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">run_all_when_everything_filtered</span> <span class="o">=</span> <span class="kp">true</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">filter_run</span> <span class="ss">:focus</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">order</span> <span class="o">=</span> <span class="s1">&#39;random&#39;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h3>Step 7</h3>
+
+
+<p>Here&rsquo;s what my features_spec.rb looks like. I&rsquo;m using Capybara to search Google.com for &ldquo;Flatiron School&rdquo; and then visiting YouTube to look for cat videos. In each describe block, I tell Capybara to visit the website and fill in the text field with what I&rsquo;m searching for and then click submit. The <code>sleep 2</code> is there to slow down the process so you can see it better in Step 8.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">require_relative</span> <span class="s1">&#39;../simple_app.rb&#39;</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper.rb&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">describe</span> <span class="s1">&#39;google search page&#39;</span><span class="p">,</span> <span class="ss">:js</span> <span class="o">=&gt;</span> <span class="kp">true</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">it</span> <span class="s2">&quot;should search the google for something&quot;</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">visit</span> <span class="s1">&#39;http://google.com&#39;</span>
+</span><span class='line'>    <span class="n">fill_in</span><span class="p">(</span><span class="s2">&quot;gbqfq&quot;</span><span class="p">,</span> <span class="ss">:with</span> <span class="o">=&gt;</span> <span class="s2">&quot;Flatiron School&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="nb">sleep</span> <span class="mi">2</span>
+</span><span class='line'>    <span class="n">click_button</span><span class="p">(</span><span class="s2">&quot;gbqfb&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="nb">sleep</span> <span class="mi">2</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">describe</span> <span class="s1">&#39;youtube search page&#39;</span><span class="p">,</span> <span class="ss">:js</span> <span class="o">=&gt;</span> <span class="kp">true</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">it</span> <span class="s2">&quot;should search youtube for maru&quot;</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">visit</span> <span class="s1">&#39;http://www.youtube.com/&#39;</span>
+</span><span class='line'>    <span class="n">fill_in</span><span class="p">(</span><span class="s2">&quot;masthead-search-term&quot;</span><span class="p">,</span> <span class="ss">:with</span> <span class="o">=&gt;</span> <span class="s2">&quot;mugumogu&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="nb">sleep</span> <span class="mi">2</span>
+</span><span class='line'>    <span class="n">click_button</span><span class="p">(</span><span class="s2">&quot;search-btn&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="nb">sleep</span> <span class="mi">2</span>
+</span><span class='line'>    <span class="n">page</span><span class="o">.</span><span class="n">should</span> <span class="n">have_content</span><span class="p">(</span><span class="s2">&quot;maru&quot;</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h3>Step 8</h3>
+
+
+<p>Now run <code>rspec</code> in your terminal and watch it do the searches and pass the tests.</p>
+
+      
+      
+    </div>
+  </div>
+
+
+</article>
+
+
+    <article class="post">
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2013-10-18T11:28:00-04:00" pubdate data-updated="true">Oct 18<span>th</span>, 2013</time></h5>
           <div class="row-fluid">
           
