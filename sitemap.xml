@@ -2,18 +2,40 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://irislee.github.io/blog/2013/10/08/ruby-tricks-and-oddities/</loc>
-        <lastmod>2013-10-10T11:48:19-04:00</lastmod>
+        <lastmod>2013-10-18T11:07:31-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://irislee.github.io/blog/2013/10/17/what-is-foobar/</loc>
+        <lastmod>2013-10-18T12:05:31-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://irislee.github.io/blog/2013/10/18/avis-hierarchy/</loc>
+        <lastmod>2013-10-18T12:03:46-04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://irislee.github.io/blog/2013/11/01/8-steps-to-create-a-simple-capybara-test/
+        </loc>
+        <lastmod>2013-11-01T10:31:02-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://irislee.github.io/404.html</loc>
+        <lastmod>2013-10-18T07:40:38-04:00</lastmod>
     </url>
     <url>
         <loc>http://irislee.github.io/blog/archives/</loc>
-        <lastmod>2013-10-10T11:48:19-04:00</lastmod>
+        <lastmod>2013-11-01T10:31:02-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://irislee.github.io/blog/</loc>
+        <lastmod>2013-11-01T10:31:02-04:00</lastmod>
     </url>
     <url>
         <loc>http://irislee.github.io/</loc>
-        <lastmod>2013-10-10T11:48:19-04:00</lastmod>
+        <lastmod>2013-11-01T10:31:02-04:00</lastmod>
     </url>
     <url>
         <loc>http://irislee.github.io/robots.txt</loc>
-        <lastmod>2013-10-10T11:48:19-04:00</lastmod>
+        <lastmod>2013-10-18T07:40:37-04:00</lastmod>
     </url>
 </urlset>
