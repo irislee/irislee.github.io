@@ -1,107 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Iris Lee</title>
-  <meta name="author" content="Iris Lee">
-
-  
-  <meta name="description" content="You&rsquo;ve probably seen something like this before: 1
-2
-3
-4
-foo = &quot;Chunky&quot;
-bar = &quot;Bacon!&quot;
-puts foo + &quot; &quot; + bar
-=&gt &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://irislee.github.io">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Iris Lee" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Iris Lee</a></h1>
-  
-    <h2>I write stuff. It's trying to be good, it has potential, but it's not. That's ok.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:irislee.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[Iris Lee]]></title>
+  <link href="http://irislee.github.io/atom.xml" rel="self"/>
+  <link href="http://irislee.github.io/"/>
+  <updated>2014-02-08T16:42:35-08:00</updated>
+  <id>http://irislee.github.io/</id>
+  <author>
+    <name><![CDATA[Iris Lee]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2013/10/17/what-is-foobar/">What&#8217;s Foo Bar?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2013-10-17T12:12:00-07:00" pubdate data-updated="true">Oct 17<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>You&rsquo;ve probably seen something like this before:</p>
+  <entry>
+    <title type="html"><![CDATA[What's foo bar?]]></title>
+    <link href="http://irislee.github.io/blog/2013/10/17/what-is-foobar/"/>
+    <updated>2013-10-17T12:12:00-07:00</updated>
+    <id>http://irislee.github.io/blog/2013/10/17/what-is-foobar</id>
+    <content type="html"><![CDATA[<p>You&rsquo;ve probably seen something like this before:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -151,42 +68,15 @@ Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldqu
   <li>What about &#8220;Chunky Bacon&#8221;? It comes from <em><a href = "http://en.wikipedia.org/wiki/Why's_(poignant)_Guide_to_Ruby">why&#8217;s (poignant) Guide to Ruby</a></em>.</li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/08/ruby-tricks-and-oddities/">Ruby Tricks and Oddities</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-08T06:34:00-07:00" pubdate data-updated="true">Oct 8<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Just looked through Julio Santos&#8217; <a href="https://speakerdeck.com/jsantos/ruby-things">&ldquo;Ruby Things&rdquo;</a> on Speaker Deck and learned some quirkly little things about Ruby.</p>
+  <entry>
+    <title type="html"><![CDATA[Ruby Tricks and Oddities]]></title>
+    <link href="http://irislee.github.io/blog/2013/10/08/ruby-tricks-and-oddities/"/>
+    <updated>2013-10-08T06:34:00-07:00</updated>
+    <id>http://irislee.github.io/blog/2013/10/08/ruby-tricks-and-oddities</id>
+    <content type="html"><![CDATA[<p>Just looked through Julio Santos&#8217; <a href="https://speakerdeck.com/jsantos/ruby-things">&ldquo;Ruby Things&rdquo;</a> on Speaker Deck and learned some quirkly little things about Ruby.</p>
 
 <p>Creating hashes from arrays. 2 different outcomes:</p>
 
@@ -266,72 +156,7 @@ For example:</p>
 </span><span class='line'> <span class="o">=&gt;</span> <span class="o">[</span><span class="s2">&quot;1. eins&quot;</span><span class="p">,</span> <span class="s2">&quot;2. zwei&quot;</span><span class="p">,</span> <span class="s2">&quot;3. drei&quot;</span><span class="o">]</span>
 </span></code></pre></td></tr></table></div></figure>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/10/17/what-is-foobar/">What&#8217;s Foo Bar?</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/10/08/ruby-tricks-and-oddities/">Ruby Tricks and Oddities</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Iris Lee -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
