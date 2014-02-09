@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Iris Lee]]></title>
+  <link href="http://irislee.github.io/atom.xml" rel="self"/>
+  <link href="http://irislee.github.io/"/>
+  <updated>2014-02-08T16:43:32-08:00</updated>
+  <id>http://irislee.github.io/</id>
+  <author>
+    <name><![CDATA[Iris Lee]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[What's foo bar?]]></title>
+    <link href="http://irislee.github.io/blog/2013/10/17/what-is-foobar/"/>
+    <updated>2013-10-17T12:12:00-07:00</updated>
+    <id>http://irislee.github.io/blog/2013/10/17/what-is-foobar</id>
+    <content type="html"><![CDATA[<p>You&rsquo;ve probably seen something like this before:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">foo</span> <span class="o">=</span> <span class="s2">&quot;Chunky&quot;</span>
+</span><span class='line'><span class="n">bar</span> <span class="o">=</span> <span class="s2">&quot;Bacon!&quot;</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">foo</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">bar</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="no">Chunky</span> <span class="no">Bacon</span><span class="o">!</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But what is the origin of using &ldquo;foo,&rdquo; &ldquo;bar,&rdquo; and &ldquo;baz&rdquo; as placeholder names in pseudocode (aka  metasyntactic variables)? According to the interwebs, &ldquo;foo&rdquo; first emerged as a nonsense word in the 1930s in the comic <i>Smokey Stover</i> by Bill Holman and became popular in other cartoons at the time. From there, &ldquo;foo&rdquo; merged with the military acronym <a href="http://en.wikipedia.org/wiki/FUBAR#FUBAR">FUBAR</a>, which arose in the armed forces during WWII. The use of &ldquo;foo&rdquo; in programming, however, is credited to MIT&rsquo;s Tech Model Railroad Club (TMRC) in the 1960s.</p>
+
+<p><img src="../images/downloads/taf.jpg" title="MIT's Tech Model Railroad Club" alt="Thomas and Friends" /></p>
+
+<p>The TMRC is celebrated due to its developmental role in hacker culture.
+Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldquo;Tech Engineering News.&rdquo; In TMRC&rsquo;s train model system, there were scram switches located at numerous places around the room that could be thrown if a train was going to crash into something. Another feature of the system was a digital clock on the dispatch board. When someone hit a scram switch, the clock stopped and would instead display the word &ldquo;&#8221;foo&rdquo;,&ldquo; thus why they were called &rdquo;&ldquo;foo&rdquo; switches&#8221;.</p>
+
+<p>The train room also had two buttons by the door labeled &ldquo;foo&rdquo; and &ldquo;bar&rdquo;. They were often re-purposed for whatever fun idea the TMRC had at the time, hence the adoption of &ldquo;foo&rdquo; and &ldquo;bar&rdquo; as general purpose variable names. &ldquo;Baz&rdquo; exists simply because Stanford preferred &ldquo;baz&rdquo; over &ldquo;bar&rdquo;.</p>
+
+<p>The terms were made popular through computer science circles in the 1960s and early 1970s by system manuals from the Digital Equipment Corporation and <a href="http://en.wikipedia.org/wiki/FORTRAN">Fortran&rsquo;s</a> code for <i><a href="http://en.wikipedia.org/wiki/Colossal_Cave_Adventure">Colossal Cave Adventure</a></i>.</p>
+
+<p>Pseudocode in other countries:</p>
+
+<ul>
+  <li>UK: wibble, wobble, fred, flob</li>
+  <li>France: toto, tata, tutu, bidule, azerty (French keyboard&#8217;s asdf)</li>
+  <li>Japan: hoge, piyo, fuga, hogera</li>
+  <li>Isarael: chupchick, stam</li>
+  <li>Italy: pippo, pluto, paperino</li>
+  <li>Spain: fulano, mengano, zutano</li>
+</ul>
+
+
+
+
+<h2>TL;DR</h2>
+
+
+<ul>
+  <li>&#8220;foo&#8221; is a nonsense word from 1930s comics.</li>
+  <li>FUBAR comes from US military slang during WWII.</li>
+  <li>MIT&#8217;s Tech Model Train Club popularized the terms for tinkering/hacking.</li>
+  <li>Use &#8220;foo&#8221;, bar, and baz to test out concepts so you don&#8217;t cause a SNAFU and make your code FUBAR.</li>
+  <li>What about &#8220;Hello, World&#8221;? It comes from <em><a href = "http://en.wikipedia.org/wiki/The_C_Programming_Language_(book)">The C Programming Language</a></em>.</li>
+  <li>What about &#8220;Chunky Bacon&#8221;? It comes from <em><a href = "http://en.wikipedia.org/wiki/Why's_(poignant)_Guide_to_Ruby">why&#8217;s (poignant) Guide to Ruby</a></em>.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby Tricks and Oddities]]></title>
+    <link href="http://irislee.github.io/blog/2013/10/08/ruby-tricks-and-oddities/"/>
+    <updated>2013-10-08T06:34:00-07:00</updated>
+    <id>http://irislee.github.io/blog/2013/10/08/ruby-tricks-and-oddities</id>
+    <content type="html"><![CDATA[<p>Just looked through Julio Santos&#8217; <a href="https://speakerdeck.com/jsantos/ruby-things">&ldquo;Ruby Things&rdquo;</a> on Speaker Deck and learned some quirkly little things about Ruby.</p>
+
+<p>Creating hashes from arrays. 2 different outcomes:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Hash</span><span class="o">[[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">]]</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="o">[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="o">]=&gt;[</span><span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">a</span><span class="o">=[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;two&quot;</span><span class="p">,</span><span class="mi">2</span><span class="o">]</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="o">[[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">]]</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">Hash</span><span class="o">[</span><span class="n">a</span><span class="o">]</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="s2">&quot;one&quot;</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;two&quot;</span><span class="o">=&gt;</span><span class="mi">2</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The <a href="http://ruby-doc.org/core-2.0.0/Array.html#method-i-zip">zip method</a> &ldquo;converts any arguments to arrays, then merges elements of self with corresponding elements from each argument.&rdquo;
+For example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">a</span> <span class="o">=</span> <span class="o">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span>
+</span><span class='line'><span class="n">b</span> <span class="o">=</span> <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span>
+</span><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="o">].</span><span class="n">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="o">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="o">]]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Santos demonstrates that you can use zip to create hashes:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">keys</span> <span class="o">=</span> <span class="o">[</span><span class="ss">:one</span><span class="p">,</span> <span class="ss">:two</span><span class="p">,</span> <span class="ss">:three</span><span class="o">]</span>
+</span><span class='line'><span class="n">values</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span>
+</span><span class='line'><span class="n">zip</span> <span class="o">=</span> <span class="n">keys</span><span class="o">.</span><span class="n">zip</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="o">[[</span><span class="ss">:one</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="ss">:two</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="ss">:three</span><span class="p">,</span> <span class="mi">3</span><span class="o">]]</span>
+</span><span class='line'><span class="no">Hash</span><span class="o">[</span><span class="n">zip</span><span class="o">]</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:one</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span> <span class="ss">:two</span><span class="o">=&gt;</span><span class="mi">2</span><span class="p">,</span> <span class="ss">:three</span><span class="o">=&gt;</span><span class="mi">3</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And yesterday while wishing a <code>collect_with_index</code> method existed, my group discovered that you can combine <code>each_with_index</code> with <code>collect</code>!</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Array</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">make_list</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">each_with_index</span><span class="o">.</span><span class="n">collect</span> <span class="k">do</span> <span class="o">|</span><span class="n">german</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+</span><span class='line'>      <span class="s2">&quot;</span><span class="si">#{</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">#{</span><span class="n">german</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;eins&quot;</span><span class="p">,</span> <span class="s2">&quot;zwei&quot;</span><span class="p">,</span> <span class="s2">&quot;drei&quot;</span><span class="o">]</span>
+</span><span class='line'><span class="n">array</span><span class="o">.</span><span class="n">make_list</span>
+</span><span class='line'> <span class="o">=&gt;</span> <span class="o">[</span><span class="s2">&quot;1. eins&quot;</span><span class="p">,</span> <span class="s2">&quot;2. zwei&quot;</span><span class="p">,</span> <span class="s2">&quot;3. drei&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
