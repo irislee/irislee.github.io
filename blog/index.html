@@ -9,7 +9,7 @@
   <meta name="author" content="Iris Lee">
 
    
-  <meta name="description" content="This is where I write stuff. It's trying to be good, it has potential, but it's not. That's ok.">
+  <meta name="description" content="I write stuff. It's trying to be good, it has potential, but it's not. That's ok.">
   
   <meta name="keywords" content="">
 
@@ -28,9 +28,8 @@
   <script src="/js/jquery.js"></script>
   <script src="/js/bootstrap-collapse.js"></script>
   <script src="/js/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/js/octopress.js" type="text/javascript"></script>
+  <script src="/js/application.js"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -53,12 +52,13 @@
 
 <ul class="nav pull-right">
     
-    <li><a href="http://github.com/irislee" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
     
     
     
     
     
+    
+
     
 </ul>
 
@@ -67,7 +67,6 @@
   	</div>
   </div>
   <div class="container" id="main">
-    <div class="span12">
       <div class="row-fluid">
         <div id="content">
           
@@ -76,8 +75,8 @@
     <article class="post">
 
   <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
+    <div class="span2 post-meta">
+	  <h5 class="date-time">
 
 
 
@@ -89,7 +88,7 @@
   
 
 
-<i class="icon-calendar-empty"></i> <time datetime="2013-11-01T08:18:00-04:00" pubdate data-updated="true">Nov 1<span>st</span>, 2013</time></h5>
+<i class="icon-calendar-empty"></i> <time datetime="2013-11-01T17:32:00-07:00" pubdate data-updated="true">Nov 1<span>st</span>, 2013</time></h5>
           <div class="row-fluid">
           
           </div>
@@ -99,22 +98,21 @@
           </div>
           
     </div>
-    <div class="span10">
+    <div class="span10 post-container">
       <h1 class="link"><a href="/blog/2013/11/01/8-steps-to-create-a-simple-capybara-test/">8 Steps to Create a Simple Capybara Test</a></h1>
       <p>What&rsquo;s Capybara?</p>
 
-<p><img src="/images/downloads/capybara.jpg" title="Capybara" alt="Capybara" /></p>
+<p><img src="http://i.imgur.com/q4ZZRfa.jpg"></p>
 
 <p>Capybara is basically a library that helps you test web applications by simulating how a real user would interact with your app.</p>
 
 <p><a href="https://github.com/jnicklas/capybara">Capybara</a> requires Ruby 1.9.3 or later. To install, type in your terminal:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>gem install capybara
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install capybara</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Capybara tests are often called feature tests or end-to-end testing. It was built on top of Nokogiri in order to discover the elements on a page using HTML and CSS. It is a DSL (Domain Specific Language) that is built on top of <a href="https://github.com/rspec/rspec">RSpec</a> and <a href="http://cukes.info/">Cucumber</a>.</p>
+<p>Capybara tests are often called feature tests or end-to-end testing. It was built on top of Nokogiri in order to discover the elements on a page using HTML and CSS. It is a DSL (Domain Specific Language) that is built on top of <a href="https://github.com/rspec/rspec"RSpec</a> and <a href="http://cukes.info/">Cucumber</a>.</p>
 
 <p>Capybara tests are like RSpec tests with Capybara flavoring (yum giant rodent). Some keywords:</p>
 
@@ -142,7 +140,7 @@
 </table>
 
 
-<p>Capybara uses a web driver (in this example Selenium) to do some browser magic. It lets you control the browser through code and has the browser take actions on your behalf in order to make sure the website actually works as the user will experience. Normally a &ldquo;headless browser&rdquo; is used to save memory, but the example below will show it to you live&hellip;for funsies.</p>
+<p>Capybara uses a web driver (in this example Selenium) to do some browser magic. It lets you control the browser through code and has the browser take actions on your behalf in order to make sure the website actually works as the user will experience. Normally a “headless browser” is used to save memory, but the example below will show it to you live…for funsies.</p>
 
 <p>Examples of Capybara syntax:</p>
 
@@ -171,12 +169,7 @@
 <h2>Capybara with Google and Youtube Searches.</h2>
 
 
-<p></p>
-
-<p>You can download this code <a href="https://github.com/irislee/try-capybara">here</a>.</p>
-
-
-
+<p><em>You can download this code <a href="https://github.com/irislee/try-capybara">here</a>.</em></p>
 
 <h3>Step 1</h3>
 
@@ -209,19 +202,17 @@
 <h3>Step 2</h3>
 
 
-<p>Don&rsquo;t forget to bundle.</p>
+<p>Don&rsquo;t forget to bundle</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>bundle install
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">bundle</span> <span class="n">install</span>
 </span></code></pre></td></tr></table></div></figure>
-
-
 
 
 <h3>Step 3</h3>
 
 
-<p>Create a simple_app.rb file (it got mad at me if I didn&rsquo;t include this file).</p>
+<p>Create a simple_app.rb file (it got mad at me if I didn’t include this file).</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -241,7 +232,7 @@
 <h3>Step 4</h3>
 
 
-<p><em>Normally, there&rsquo;d be more folders in your application, but this is a very simple example so everything is in the top level.</em></p>
+<p><em>Normally, there’d be more folders in your application, but this is a very simple example so everything is in the top level.</em></p>
 
 <p>Your environment.rb should look like this:</p>
 
@@ -261,7 +252,7 @@
 <h3>Step 5</h3>
 
 
-<p>And your config.ru&hellip;</p>
+<p>And your config.ru…</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -317,7 +308,7 @@
 <h3>Step 7</h3>
 
 
-<p>Here&rsquo;s what my features_spec.rb looks like. I&rsquo;m using Capybara to search Google.com for &ldquo;Flatiron School&rdquo; and then visiting YouTube to look for cat videos. In each describe block, I tell Capybara to visit the website and fill in the text field with what I&rsquo;m searching for and then click submit. The <code>sleep 2</code> is there to slow down the process so you can see it better in Step 8.</p>
+<p>Here’s what my features_spec.rb looks like. I’m using Capybara to search Google.com for “Flatiron School” and then visiting YouTube to look for cat videos. In each describe block, I tell Capybara to visit the website and fill in the text field with what I’m searching for and then click submit. The <code>sleep 2</code> is there to slow down the process so you can see it better in Step 8.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -387,8 +378,8 @@
     <article class="post">
 
   <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
+    <div class="span2 post-meta">
+	  <h5 class="date-time">
 
 
 
@@ -400,70 +391,17 @@
   
 
 
-<i class="icon-calendar-empty"></i> <time datetime="2013-10-18T11:28:00-04:00" pubdate data-updated="true">Oct 18<span>th</span>, 2013</time></h5>
+<i class="icon-calendar-empty"></i> <time datetime="2013-10-17T12:12:00-07:00" pubdate data-updated="true">Oct 17<span>th</span>, 2013</time></h5>
           <div class="row-fluid">
           
           </div>
           
           <div class="row-fluid">
-          
-          <a href="/blog/categories/flatironschool/"><span class="badge">flatironschool</span></a>
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2013/10/18/avis-hierarchy/">Avi&#8217;s Hierarchy</a></h1>
-      <p><img src="/images/downloads/avi.png" title="Avi's Goofy Triangle" alt="Avi's Goofy Triangle" /></p>
-
-<p>Where you should be spending your time when working on a project:</p>
-
-<ul>
-  <li>Views: things like erb templates have the least priority.</li>
-  <li>Controllers: site generators, parsers, etc are second to least important.</li>
-  <li><strong>Models: very high priority!</strong> Be sure to have a bunch of tests for your models.</li>
-  <li>Databases: super important to have a good foundation for your project so you can use it.</li>
-</ul>
-
-
-      
-      
-    </div>
-  </div>
-
-
-</article>
-
-
-    <article class="post">
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2013-10-17T12:12:00-04:00" pubdate data-updated="true">Oct 17<span>th</span>, 2013</time></h5>
-          <div class="row-fluid">
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          <a href="/blog/categories/programming/"><span class="badge">programming</span></a>
           
           </div>
           
     </div>
-    <div class="span10">
+    <div class="span10 post-container">
       <h1 class="link"><a href="/blog/2013/10/17/what-is-foobar/">What&#8217;s foo bar?</a></h1>
       <p>You&rsquo;ve probably seen something like this before:</p>
 
@@ -480,10 +418,10 @@
 
 <p>But what is the origin of using &ldquo;foo,&rdquo; &ldquo;bar,&rdquo; and &ldquo;baz&rdquo; as placeholder names in pseudocode (aka  metasyntactic variables)? According to the interwebs, &ldquo;foo&rdquo; first emerged as a nonsense word in the 1930s in the comic <i>Smokey Stover</i> by Bill Holman and became popular in other cartoons at the time. From there, &ldquo;foo&rdquo; merged with the military acronym <a href="http://en.wikipedia.org/wiki/FUBAR#FUBAR">FUBAR</a>, which arose in the armed forces during WWII. The use of &ldquo;foo&rdquo; in programming, however, is credited to MIT&rsquo;s Tech Model Railroad Club (TMRC) in the 1960s.</p>
 
-<p><img class="center" src="http://tmrc.mit.edu/images/p-yard1.jpg"></p>
+<p><img src="../images/downloads/taf.jpg" title="MIT's Tech Model Railroad Club" alt="Thomas and Friends" /></p>
 
 <p>The TMRC is celebrated due to its developmental role in hacker culture.
-Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldquo;Tech Engineering News.&rdquo; In TMRC&rsquo;s train model system, there were scram switches located at numerous places around the room that could be thrown if a train was going to crash into something. Another feature of the system was a digital clock on the dispatch board. When someone hit a scram switch, the clock stopped and would instead display the word &ldquo;foo,&rdquo; thus why they were called &ldquo;foo&rdquo; switches.</p>
+Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldquo;Tech Engineering News.&rdquo; In TMRC&rsquo;s train model system, there were scram switches located at numerous places around the room that could be thrown if a train was going to crash into something. Another feature of the system was a digital clock on the dispatch board. When someone hit a scram switch, the clock stopped and would instead display the word &ldquo;&#8221;foo&rdquo;,&ldquo; thus why they were called &rdquo;&ldquo;foo&rdquo; switches&#8221;.</p>
 
 <p>The train room also had two buttons by the door labeled &ldquo;foo&rdquo; and &ldquo;bar&rdquo;. They were often re-purposed for whatever fun idea the TMRC had at the time, hence the adoption of &ldquo;foo&rdquo; and &ldquo;bar&rdquo; as general purpose variable names. &ldquo;Baz&rdquo; exists simply because Stanford preferred &ldquo;baz&rdquo; over &ldquo;bar&rdquo;.</p>
 
@@ -528,8 +466,8 @@ Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldqu
     <article class="post">
 
   <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
+    <div class="span2 post-meta">
+	  <h5 class="date-time">
 
 
 
@@ -541,19 +479,17 @@ Foo&rsquo;s first appearance in print was in a 1965 edition of MIT&rsquo;s &ldqu
   
 
 
-<i class="icon-calendar-empty"></i> <time datetime="2013-10-08T06:34:00-04:00" pubdate data-updated="true">Oct 8<span>th</span>, 2013</time></h5>
+<i class="icon-calendar-empty"></i> <time datetime="2013-10-08T06:34:00-07:00" pubdate data-updated="true">Oct 8<span>th</span>, 2013</time></h5>
           <div class="row-fluid">
           
           </div>
           
           <div class="row-fluid">
-          
-          <a href="/blog/categories/ruby/"><span class="badge">ruby</span></a>
           
           </div>
           
     </div>
-    <div class="span10">
+    <div class="span10 post-container">
       <h1 class="link"><a href="/blog/2013/10/08/ruby-tricks-and-oddities/">Ruby Tricks and Oddities</a></h1>
       <p>Just looked through Julio Santos&#8217; <a href="https://speakerdeck.com/jsantos/ruby-things">&ldquo;Ruby Things&rdquo;</a> on Speaker Deck and learned some quirkly little things about Ruby.</p>
 
@@ -654,14 +590,13 @@ For example:</p>
       <div class="row-fluid">
         <footer class="footer-page" role="contentinfo">
           <p>
-  Copyright &copy; 2013 - Iris Lee -
+  Copyright &copy; 2014 - Iris Lee -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span> - Theme by <a href="http://alexgaribay.com">Alex Garibay</a>
 </p>
 
 
         </footer>
       </div>
-    </div>
   </div>
   
 
