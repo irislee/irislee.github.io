@@ -7,7 +7,7 @@ categories:
 ---
 What's Capybara?
 
-{% img http://i.imgur.com/q4ZZRfa.jpg %}
+![Capybara](../images/downloads/capybara.jpg "Capybara")
 
 Capybara is basically a library that helps you test web applications by simulating how a real user would interact with your app.
 
